@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #87CEEB 0%, #98FB98 50%, #F0E68C 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: #2F4F4F;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+nav > div:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+}
+
+nav a:hover {
+  background-color: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+#home-view {
+  background-image: url('BlueHeron.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 6rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.game-description {
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  max-width: 800px;
+  background: rgba(255,255,255,0.95);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 2;
+}
+
+.game-description h2 {
+  color: #2F4F4F;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.game-description p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+.mode-buttons button {
+  padding: 1.5rem;
+  border: none;
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  flex: 1;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  color: #2F4F4F;
+  text-align: center;
+  pointer-events: auto;
+}
+
+.mode-buttons button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+}
+
+.mode-desc {
+  font-size: 0.9rem;
+  font-weight: normal;
+  opacity: 0.8;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#game-view, #about-view {
+  background: linear-gradient(135deg, #87CEEB 0%, #98FB98 50%, #F0E68C 100%);
+  min-height: 100vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 6rem 2rem 2rem 2rem;
+  position: relative;
+  overflow-y: auto;
+}
+
+.game-header {
+  background: rgba(255,255,255,0.95);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.game-header h3 {
+  margin: 0;
+  color: #2F4F4F;
+  font-size: 1.5rem;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.map-container iframe {
+  max-width: 100%;
+  border: none;
+  border-radius: 15px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home-btn {
+  background: #2F4F4F;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #1F3F3F;
+  transform: translateY(-2px);
+}
+
+.card {
+  background: rgba(255,255,255,0.95);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-left: 5px solid #32CD32;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.card h4 {
+  color: #2F4F4F;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background: rgba(255,255,255,0.9);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature h3 {
+  color: #2F4F4F;
+  margin-bottom: 1rem;
+}
+
+.feature ul {
+  color: #555;
+  line-height: 1.6;
+}
+
+.feature li {
+  margin: 0.5rem 0;
+}
+
+#about-view h2 {
+  text-align: center;
+  color: #2F4F4F;
+  background: rgba(255,255,255,0.9);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  #home-view {
+    padding: 5rem 1rem 2rem 1rem;
+    justify-content: center;
+  }
+  
+  #game-view, #about-view {
+    padding: 5rem 1rem 2rem 1rem;
+    margin-left: calc(-50vw + 50%);
+  }
+  
+  .game-description {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .game-description h2 {
+    font-size: 1.4rem;
+  }
+  
+  .game-description p {
+    font-size: 1rem;
+  }
+  
+  .mode-buttons {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0.8rem;
+  }
+  
+  .mode-buttons button {
+    min-width: auto;
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .game-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  
+  .map-container iframe {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  nav {
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav > div:first-child {
+    font-size: 1.3rem;
+  }
+  
+  nav > div:last-child {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  nav a {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #home-view {
+    padding: 4rem 0.5rem 1.5rem 0.5rem;
+  }
+  
+  #game-view, #about-view {
+    padding: 4rem 0.5rem 1.5rem 0.5rem;
+  }
+  
+  .game-description {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .game-description h2 {
+    font-size: 1.2rem;
+  }
+  
+  .mode-buttons {
+    margin: 0.5rem;
+    gap: 0.6rem;
+  }
+  
+  .mode-buttons button {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #home-view {
+    padding: 8rem 4rem 4rem 4rem;
+  }
+  
+  #game-view, #about-view {
+    padding: 8rem 4rem 4rem 4rem;
+  }
+  
+  .game-description {
+    max-width: 900px;
+    padding: 2rem;
+  }
+  
+  .mode-buttons {
+    max-width: 900px;
+  }
+}

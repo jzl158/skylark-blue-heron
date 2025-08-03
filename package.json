@@ -1,0 +1,29 @@
+{
+  "name": "skylark-blue-heron-edition",
+  "version": "1.0.0",
+  "description": "A peaceful quest-powered life simulation game set on the mystical Skylark Island",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "game",
+    "life-sim",
+    "peaceful",
+    "quests",
+    "web3",
+    "island",
+    "adventure"
+  ],
+  "author": "Blue Heron Game Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

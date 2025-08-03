@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skylark: Blue Heron Edition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div>Skylark</div>
+    <div>
+      <a href="#" onclick="showHome()">Home</a>
+      <a href="#" onclick="showAbout()">About</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="home-view">
+      <div class="game-description">
+        <h2>A Peaceful Quest-Powered Life Sim with a Hero's Heart</h2>
+        <p>Welcome to Skylark, a calming island adventure where nature, creativity, and onchain quests intertwine.</p>
+        <p>Step into the feathered boots of Blue Heron—a mysterious yet endearing guardian of the island realm.</p>
+      </div>
+
+      <div class="mode-buttons">
+        <button onclick="startGame('easy')">Easy<br><span class="mode-desc">5 quests • Cozy exploration</span></button>
+        <button onclick="startGame('medium')">Medium<br><span class="mode-desc">8 quests • Balanced adventure</span></button>
+        <button onclick="startGame('runner')">Runner<br><span class="mode-desc">13 quests • Speed challenge</span></button>
+      </div>
+    </div>
+
+    <div id="game-view" class="hidden">
+      <div class="game-header">
+        <h3 id="mode-title"></h3>
+        <button onclick="returnHome()" class="home-btn">Return Home</button>
+      </div>
+      
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1CSM1wDTknUWX0pDIef9yxBjqJtmqB8E&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+      </div>
+      
+      <div id="quest-cards-container" class="cards-container">
+        <!-- Quest cards will be dynamically generated here -->
+      </div>
+    </div>
+
+    <div id="about-view" class="hidden">
+      <h2>About Skylark: Blue Heron Edition</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>🌟 Game Modes</h3>
+          <ul>
+            <li><strong>Easy:</strong> Explore at your own pace. Perfect for cozy vibes and light discovery</li>
+            <li><strong>Medium:</strong> A balanced journey of puzzles, lore, and mini-missions</li>
+            <li><strong>Runner:</strong> Test your reflexes and intuition in a speed-focused, high-stakes scavenger mode</li>
+          </ul>
+        </div>
+        <div class="feature">
+          <h3>🏞️ Features</h3>
+          <ul>
+            <li>Cozy worldbuilding with seasonal changes</li>
+            <li>Dynamic quest system (powered by player choice)</li>
+            <li>Onchain collectibles and character growth</li>
+            <li>Village upgrades and hidden areas to unlock</li>
+          </ul>
+        </div>
+        <div class="feature">
+          <h3>🎨 Visual Style</h3>
+          <p>Soft, stylized environments inspired by Japanese architecture, lush forests, and serene riverscapes. Think Animal Crossing meets Journey, with a Web3 twist.</p>
+        </div>
+        <div class="feature">
+          <h3>🧠 Vibe</h3>
+          <p>Playful, introspective, and quietly heroic.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
