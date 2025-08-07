@@ -27,6 +27,11 @@ nav > div:first-child {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
+.nav-logo {
+  height: 30px;
+  width: auto;
+}
+
 nav a {
   color: white;
   text-decoration: none;
@@ -230,6 +235,35 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+.activation-btn {
+  background: linear-gradient(135deg, #32CD32 0%, #228B22 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.activation-btn:hover {
+  background: linear-gradient(135deg, #228B22 0%, #006400 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(50, 205, 50, 0.3);
+}
+
+.coming-soon {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  padding: 0.8rem;
+  background: rgba(200, 200, 200, 0.3);
+  border-radius: 10px;
+}
+
 
 .feature-grid {
   display: grid;
@@ -375,6 +409,50 @@ nav a:hover {
     padding: 1rem;
     font-size: 0.9rem;
   }
+}
+
+.social-footer {
+  background-color: #2F4F4F;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  min-width: 100px;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  opacity: 0.9;
 }
 
 @media (min-width: 1200px) {

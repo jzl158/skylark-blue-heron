@@ -8,10 +8,10 @@
 </head>
 <body>
   <nav>
-    <div>Skylark</div>
+    <div><img src="logoBase.png" alt="Skylark" class="nav-logo" onclick="showHome()" style="cursor: pointer;"></div>
     <div>
       <a href="#" onclick="showHome()">Home</a>
-      <a href="#" onclick="showAbout()">About</a>
+      <a href="#" onclick="showPrizes()">Prizes</a>
     </div>
   </nav>
 
@@ -36,8 +36,8 @@
         <button onclick="returnHome()" class="home-btn">Return Home</button>
       </div>
       
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1CSM1wDTknUWX0pDIef9yxBjqJtmqB8E&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+      <div class="map-container" id="map-container">
+        <!-- Map will be dynamically loaded based on game mode -->
       </div>
       
       <div id="quest-cards-container" class="cards-container">
@@ -45,37 +45,41 @@
       </div>
     </div>
 
-    <div id="about-view" class="hidden">
-      <h2>About Skylark: Blue Heron Edition</h2>
+    <div id="prizes-view" class="hidden">
+      <h2>Prizes - Skylark: Blue Heron Edition</h2>
       <div class="feature-grid">
         <div class="feature">
-          <h3>🌟 Game Modes</h3>
-          <ul>
-            <li><strong>Easy:</strong> Explore at your own pace. Perfect for cozy vibes and light discovery</li>
-            <li><strong>Medium:</strong> A balanced journey of puzzles, lore, and mini-missions</li>
-            <li><strong>Runner:</strong> Test your reflexes and intuition in a speed-focused, high-stakes scavenger mode</li>
-          </ul>
+          <h3>🥉 Easy Prize</h3>
+          <p>50% off Skylark Merch</p>
         </div>
         <div class="feature">
-          <h3>🏞️ Features</h3>
-          <ul>
-            <li>Cozy worldbuilding with seasonal changes</li>
-            <li>Dynamic quest system (powered by player choice)</li>
-            <li>Onchain collectibles and character growth</li>
-            <li>Village upgrades and hidden areas to unlock</li>
-          </ul>
+          <h3>🥈 Medium Prize</h3>
+          <p>$25 USDC</p>
         </div>
         <div class="feature">
-          <h3>🎨 Visual Style</h3>
-          <p>Soft, stylized environments inspired by Japanese architecture, lush forests, and serene riverscapes. Think Animal Crossing meets Journey, with a Web3 twist.</p>
-        </div>
-        <div class="feature">
-          <h3>🧠 Vibe</h3>
-          <p>Playful, introspective, and quietly heroic.</p>
+          <h3>🥇 Runner Prize</h3>
+          <p>Custom Skylark Merch</p>
         </div>
       </div>
     </div>
   </div>
+
+  <footer class="social-footer">
+    <div class="social-links">
+      <a href="https://www.skylarknova.xyz" target="_blank" class="social-link">
+        <span class="social-icon">🌐</span>
+        <span class="social-label">Website</span>
+      </a>
+      <a href="https://www.instagram.com/skylarknova" target="_blank" class="social-link">
+        <span class="social-icon">📷</span>
+        <span class="social-label">Instagram</span>
+      </a>
+      <a href="https://www.x.com/skylarknova" target="_blank" class="social-link">
+        <span class="social-icon">❌</span>
+        <span class="social-label">X</span>
+      </a>
+    </div>
+  </footer>
 
   <script src="game.js"></script>
 </body>

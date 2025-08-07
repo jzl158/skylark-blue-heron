@@ -5,164 +5,138 @@ let currentMode = '';
 const questData = {
   easy: [
     {
-      title: "Welcome to Skylark Island",
-      description: "You've arrived on the mystical Skylark Island as Blue Heron. The gentle breeze carries whispers of ancient magic. Take a moment to observe your surroundings and feel the island's peaceful energy.",
-      action: "Observe the Island",
-      reward: "Island Map"
+      title: "Community Garden",
+      description: "The Blue Heron Community Garden is home to over 30 organic plots. The largest plot is dedicated to growing vegetables for the St. Luke's Crossroads Kitchen, a volunteer-based effort that feeds unhoused people in Midtown.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/689302756bd8d1e561a27b1a"
     },
     {
-      title: "Meet the Village Elder",
-      description: "A wise old turtle named Sage sits by the ancient cherry blossom tree. He has been the island's guardian for centuries and wants to share the island's history with you.",
-      action: "Listen to Sage's Story",
-      reward: "Ancient Wisdom"
+      title: "Amphibian Foundation",
+      description: "First stop! Welcome to the Blue Heron Scavenger Hunt. Blue Heron Nature Preserve is home to the 3-mile Blueway Trail which allows visitors to experience 30 acres of woodlands, wetlands, riparian areas and meadows. Let's get acquainted with the exploratory experience you are about to embark upon.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/689300b96bd8d1e561a27b12"
     },
     {
-      title: "Collect Morning Dew",
-      description: "The morning dew on the lotus leaves contains special properties that help plants grow. Collect some dew drops to help restore the island's gardens.",
-      action: "Gather Dew Drops",
-      reward: "Crystal Dew"
+      title: "Avian Archipelago",
+      description: "Pick a bird to highlight. This mural to the right was done to bring attention to 30+ bird species that have been on the decline due to their lack of habitat. Watch the video to learn about the Blue Heron featured here and share a pic of your favorite bird",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6892a8bbcb613264194f98b5"
     },
     {
-      title: "Plant Friendship Seeds",
-      description: "Use the morning dew to plant special friendship seeds around the village. These seeds will grow into beautiful flowers that bring joy to all island inhabitants.",
-      action: "Plant Seeds",
-      reward: "Blooming Friendship"
+      title: "Little Tree Library",
+      description: "Public little libraries like this are special because they create community owned literacy moments. Read the highlighted part of the selected book, \"The Doctor is In\" and complete the activation.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893e9506bd8d1e561a27b24"
     },
     {
-      title: "Island Harmony Ritual",
-      description: "As the sun sets, join the island community in a peaceful harmony ritual. Your presence completes the circle of island guardians.",
-      action: "Complete the Ritual",
-      reward: "Guardian's Blessing"
+      title: "Discovery Dock",
+      description: "The Discovery Dock was built in 2019 as a Contemplation point for the Urban Wetlands. Share a picture of your view on the dock",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893f3506bd8d1e561a27b3a"
     }
   ],
   medium: [
     {
-      title: "The Blue Heron's Calling",
-      description: "You feel a mysterious calling deep within your spirit. The island's ancient magic is awakening, and you must discover your true purpose as its guardian.",
-      action: "Meditate by the Sacred Pool",
-      reward: "Spiritual Awakening"
+      title: "Community Garden",
+      description: "The Blue Heron Community Garden is home to over 30 organic plots. The largest plot is dedicated to growing vegetables for the St. Luke's Crossroads Kitchen, a volunteer-based effort that feeds unhoused people in Midtown.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/689302756bd8d1e561a27b1a"
     },
     {
-      title: "Hidden Temple Discovery",
-      description: "While exploring the northern cliffs, you discover an entrance to a hidden temple covered in mystical symbols. The entrance glows with a soft blue light.",
-      action: "Enter the Temple",
-      reward: "Temple Key"
+      title: "Amphibian Foundation",
+      description: "First stop! Welcome to the Blue Heron Scavenger Hunt. Blue Heron Nature Preserve is home to the 3-mile Blueway Trail which allows visitors to experience 30 acres of woodlands, wetlands, riparian areas and meadows. Let's get acquainted with the exploratory experience you are about to embark upon.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/689300b96bd8d1e561a27b12"
     },
     {
-      title: "Solve the Water Puzzle",
-      description: "Inside the temple, you find an ancient water puzzle. Channels must be aligned to allow the sacred water to flow and activate the temple's magic.",
-      action: "Align the Water Channels",
-      reward: "Flow Crystal"
+      title: "Avian Archipelago",
+      description: "Pick a bird to highlight. This mural to the right was done to bring attention to 30+ bird species that have been on the decline due to their lack of habitat. Watch the video to learn about the Blue Heron featured here and share a pic of your favorite bird",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6892a8bbcb613264194f98b5"
     },
     {
-      title: "Restore the Shrine",
-      description: "The temple's central shrine has been damaged by time. Use your collected items and island knowledge to carefully restore it to its former glory.",
-      action: "Repair the Shrine",
-      reward: "Shrine Blessing"
+      title: "Little Tree Library",
+      description: "Public little libraries like this are special because they create community owned literacy moments. Read the highlighted part of the selected book, \"The Doctor is In\" and complete the activation.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893e9506bd8d1e561a27b24"
     },
     {
-      title: "Bridge the Two Villages",
-      description: "You discover a second village across the misty valley. The bridge between them has been broken for years. Help rebuild the connection between the communities.",
-      action: "Rebuild the Bridge",
-      reward: "Unity Stone"
+      title: "Discovery Dock",
+      description: "The Discovery Dock was built in 2019 as a Contemplation point for the Urban Wetlands. Share a picture of your view on the dock",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893f3506bd8d1e561a27b3a"
     },
     {
-      title: "The Night Market Festival",
-      description: "Both villages come together for a magical night market festival. Help organize the event and ensure everyone can participate in the celebration.",
-      action: "Organize the Festival",
-      reward: "Festival Lantern"
+      title: "Butterfly Garden",
+      description: "This hidden garden highlights some of the butterfly species present throughout this preserve. Tell us one of your choice",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893ecdc6bd8d1e561a27b2a"
     },
     {
-      title: "Rescue the Lost Spirits",
-      description: "Some ancient spirits have become lost in the shadow realm. Use your temple knowledge and collected items to guide them back to the light.",
-      action: "Guide the Spirits",
-      reward: "Spirit Harmony"
+      title: "Animal Tracks",
+      description: "Sometimes even when you don't see an animal, you are aware of its presence by the signs it leaves. Upload a pic of this sign and tell us your favorite",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893eff06bd8d1e561a27b30"
     },
     {
-      title: "Guardian's Final Trial",
-      description: "Complete your transformation into a true island guardian by balancing all the elements you've encountered: water, earth, air, and spirit.",
-      action: "Balance the Elements",
-      reward: "Master Guardian Status"
+      title: "Green Thy Heart",
+      description: "The mixed media installation you see above is a loving reflection on our sacred connection to Mother Earth and to one another. \"Green Thy Heart\" is a reminder we are part of this global collective living on Mother Earth. Are our hearts in sync with the rhythm of our living planet? We can make mindful decisions about how the consumer choices of today affect the whole of tomorrow. We can choose to come into harmony and balance, and green our hearts. Now is the time to take inspired actions that support our natural world.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893f1736bd8d1e561a27b36"
     }
   ],
   runner: [
     {
-      title: "Emergency on Skylark Island",
-      description: "A magical storm is approaching! You have limited time to prepare the island's defenses. Quick decisions will determine the island's fate.",
-      action: "Sound the Warning Bell",
-      reward: "Storm Warning"
+      title: "Community Garden",
+      description: "The Blue Heron Community Garden is home to over 30 organic plots. The largest plot is dedicated to growing vegetables for the St. Luke's Crossroads Kitchen, a volunteer-based effort that feeds unhoused people in Midtown.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/689302756bd8d1e561a27b1a"
     },
     {
-      title: "Gather the Storm Crystals",
-      description: "Ancient storm crystals scattered across the island can help create a protective barrier. You must collect them quickly before the storm hits!",
-      action: "Collect 5 Storm Crystals",
-      reward: "Storm Crystals"
+      title: "Amphibian Foundation",
+      description: "First stop! Welcome to the Blue Heron Scavenger Hunt. Blue Heron Nature Preserve is home to the 3-mile Blueway Trail which allows visitors to experience 30 acres of woodlands, wetlands, riparian areas and meadows. Let's get acquainted with the exploratory experience you are about to embark upon.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/689300b96bd8d1e561a27b12"
     },
     {
-      title: "Evacuate the Forest Creatures",
-      description: "The woodland creatures need help reaching safety. Navigate through the windy forest paths and guide them to the sheltered caves.",
-      action: "Guide Creatures to Safety",
-      reward: "Forest Gratitude"
+      title: "Avian Archipelago",
+      description: "Pick a bird to highlight. This mural to the right was done to bring attention to 30+ bird species that have been on the decline due to their lack of habitat. Watch the video to learn about the Blue Heron featured here and share a pic of your favorite bird",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6892a8bbcb613264194f98b5"
     },
     {
-      title: "Activate the Lighthouse",
-      description: "The lighthouse beacon has gone dark! Climb to the top and relight it to guide any lost travelers to safety before the storm worsens.",
-      action: "Relight the Beacon",
-      reward: "Lighthouse Flame"
+      title: "Little Tree Library",
+      description: "Public little libraries like this are special because they create community owned literacy moments. Read the highlighted part of the selected book, \"The Doctor is In\" and complete the activation.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893e9506bd8d1e561a27b24"
     },
     {
-      title: "Seal the Sacred Wells",
-      description: "The island's sacred wells must be sealed to prevent contamination from the storm. Race between the three wells and perform the sealing ritual.",
-      action: "Seal All Wells",
-      reward: "Well Protections"
+      title: "Discovery Dock",
+      description: "The Discovery Dock was built in 2019 as a Contemplation point for the Urban Wetlands. Share a picture of your view on the dock",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893f3506bd8d1e561a27b3a"
     },
     {
-      title: "Protect the Memory Tree",
-      description: "The ancient Memory Tree holds all of the island's history. Create a magical shield around it using your collected items before the winds arrive.",
-      action: "Shield the Memory Tree",
-      reward: "Memory Preservation"
+      title: "Butterfly Garden",
+      description: "This hidden garden highlights some of the butterfly species present throughout this preserve. Tell us one of your choice",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893ecdc6bd8d1e561a27b2a"
     },
     {
-      title: "Rally the Village Guardians",
-      description: "Other village guardians are scattered and confused. Find them quickly and coordinate your efforts to strengthen the island's defenses.",
-      action: "Unite the Guardians",
-      reward: "Guardian Alliance"
+      title: "Animal Tracks",
+      description: "Sometimes even when you don't see an animal, you are aware of its presence by the signs it leaves. Upload a pic of this sign and tell us your favorite",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893eff06bd8d1e561a27b30"
     },
     {
-      title: "Channel the Storm's Power",
-      description: "Instead of just defending, you realize you can channel the storm's energy! Use all your knowledge to transform the threat into a blessing.",
-      action: "Redirect Storm Energy",
-      reward: "Storm Mastery"
+      title: "Green Thy Heart",
+      description: "The mixed media installation you see above is a loving reflection on our sacred connection to Mother Earth and to one another. \"Green Thy Heart\" is a reminder we are part of this global collective living on Mother Earth. Are our hearts in sync with the rhythm of our living planet? We can make mindful decisions about how the consumer choices of today affect the whole of tomorrow. We can choose to come into harmony and balance, and green our hearts. Now is the time to take inspired actions that support our natural world.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893f1736bd8d1e561a27b36"
     },
     {
-      title: "The Great Barrier Ritual",
-      description: "With all guardians united and storm energy channeled, perform the legendary Great Barrier Ritual to permanently protect the island.",
-      action: "Cast the Great Barrier",
-      reward: "Eternal Protection"
+      title: "Emma Wetland Trail",
+      description: "You made it here! Take a seat and take it all in. Did you know all of this was back here? Close out strongly by taking a picture on the bench to complete this activation.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6892fe576bd8d1e561a27b11"
     },
     {
-      title: "Storm's End Celebration",
-      description: "The storm has passed and become a source of power! Lead the island in a celebration of resilience and newfound strength.",
-      action: "Lead the Victory Dance",
-      reward: "Storm Dancer Title"
+      title: "Animal Spirit",
+      description: "The Muscogee, also known as the Creek, have a rich and complex history that extends far beyond the arrival of Europeans. Originating from the southeastern United States, particularly in regions now known as Alabama, Georgia, Florida, and South Carolina, the Muscogee were highly influential in the shaping of America's history and cultural landscape.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893e6c26bd8d1e561a27b23"
     },
     {
-      title: "Establish the Weather Watch",
-      description: "Create a new tradition of weather watchers who can predict and prepare for future storms, ensuring the island stays protected.",
-      action: "Train New Watchers",
-      reward: "Weather Wisdom"
+      title: "Bat Box",
+      description: "Bats are an important part of a functioning ecosystem, and with natural habitats in decline they need our help now more than ever. You can welcome bats in your very own backyard by providing food, water, and shelter – creating bat habitat in even the smallest of spaces.",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/689406abcb613264194f98da"
     },
     {
-      title: "The Phoenix Feather Quest",
-      description: "A legendary phoenix has appeared, drawn by your storm mastery! Earn its respect to receive a feather that grants power over all weather.",
-      action: "Prove Your Worth",
-      reward: "Phoenix Feather"
+      title: "Claim the Nancy Creek NFT (Optional)",
+      description: "This NFT was generated from live data generated at this creek. We took the data from and created computer generated art that was minted for your collection. Collect one by visiting the URL",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/68942aa76bd8d1e561a27b3e"
     },
     {
-      title: "Master of Skylark Island",
-      description: "You have proven yourself as the ultimate guardian. Accept your role as the Master of Skylark Island and protector of all weather magic.",
-      action: "Accept Mastery",
-      reward: "Weather Master Crown"
+      title: "Spot the Yellow Bird (Optional)",
+      description: "This yellow bird is hidden in the Community Garden. Catch a pic before they fly away",
+      activationUrl: "https://app.skylarknova.xyz/patronActivation/6893ee2b6bd8d1e561a27b2c"
     }
   ]
 };
@@ -176,13 +150,13 @@ function initGame() {
 function showHome() {
   document.getElementById('home-view').classList.remove('hidden');
   document.getElementById('game-view').classList.add('hidden');
-  document.getElementById('about-view').classList.add('hidden');
+  document.getElementById('prizes-view').classList.add('hidden');
 }
 
-function showAbout() {
+function showPrizes() {
   document.getElementById('home-view').classList.add('hidden');
   document.getElementById('game-view').classList.add('hidden');
-  document.getElementById('about-view').classList.remove('hidden');
+  document.getElementById('prizes-view').classList.remove('hidden');
 }
 
 function returnHome() {
@@ -195,12 +169,26 @@ function startGame(mode) {
   currentMode = mode;
   
   document.getElementById('home-view').classList.add('hidden');
-  document.getElementById('about-view').classList.add('hidden');
+  document.getElementById('prizes-view').classList.add('hidden');
   document.getElementById('game-view').classList.remove('hidden');
   
   document.getElementById('mode-title').textContent = `${mode.charAt(0).toUpperCase() + mode.slice(1)} Mode`;
   
+  loadMap(mode);
   loadAllQuests(mode);
+}
+
+function loadMap(mode) {
+  const mapContainer = document.getElementById('map-container');
+  
+  if (mode === 'easy') {
+    mapContainer.innerHTML = '<iframe src="https://www.google.com/maps/d/embed?mid=1qMtdqdetuGoCuXVaLvIYCRfVg3mbcHQ&hl=en&ehbc=2E312F" width="640" height="480"></iframe>';
+  } else if (mode === 'runner') {
+    mapContainer.innerHTML = '<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bWF-NeFOJhVhM3MyYv-9M0UT9tRTmmM&ehbc=2E312F" width="640" height="480"></iframe>';
+  } else {
+    // For medium mode, use the original map
+    mapContainer.innerHTML = '<iframe src="https://www.google.com/maps/d/embed?mid=1CSM1wDTknUWX0pDIef9yxBjqJtmqB8E&hl=en&ehbc=2E312F" width="640" height="480"></iframe>';
+  }
 }
 
 function loadAllQuests(mode) {
@@ -211,9 +199,15 @@ function loadAllQuests(mode) {
   quests.forEach((quest, index) => {
     const card = document.createElement('div');
     card.className = 'card';
+    
+    const activationButton = quest.activationUrl ? 
+      `<button class="activation-btn" onclick="window.open('${quest.activationUrl}', '_blank')">Start Quest</button>` : 
+      '<p class="coming-soon">Coming Soon</p>';
+    
     card.innerHTML = `
       <h4>${quest.title}</h4>
       <p>${quest.description}</p>
+      ${activationButton}
     `;
     container.appendChild(card);
   });
